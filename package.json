@@ -1,0 +1,70 @@
+{
+  "name": "gamescraper",
+  "version": "1.0.0",
+  "description": "Scrape games lists from game services",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --env.prod",
+    "build:local": "webpack --env.prod --env.local",
+    "dev": "webpack --env.dev",
+    "dev:local": "webpack --env.dev --env.local",
+    "setup": "node ./src/setup.js",
+    "start:dev": "webpack-dev-server --env.dev",
+    "start:visualize": "webpack-dev-server --env.dev --env.visualize",
+    "parcel:dev": "parcel src/index.html",
+    "parcel:build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmccormack/gamescraper.git"
+  },
+  "keywords": [
+    "Games",
+    "Scraper",
+    "React",
+    "MongoDB",
+    "Mongoose",
+    "Steam"
+  ],
+  "author": "Christopher McCormack https://mackville.net",
+  "bugs": {
+    "url": "https://github.com/cmccormack/gamescraper/issues"
+  },
+  "homepage": "https://github.com/cmccormack/gamescraper#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.0.0",
+    "eslint-plugin-react": "^7.9.1",
+    "node-sass": "^4.9.0",
+    "parcel-plugin-bundle-visualiser": "^1.1.2",
+    "parcel-plugin-compress": "^1.0.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.0",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0",
+    "@fortawesome/react-fontawesome": "^0.1.0",
+    "@material-ui/core": "^1.3.0",
+    "@material-ui/icons": "^1.1.0",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "classnames": "^2.2.6",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.1",
+    "parcel-bundler": "latest",
+    "passport": "^0.4.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
